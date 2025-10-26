@@ -5,7 +5,8 @@ import java.util.Date;
 import java.util.Locale;
 
 public class LogikaPerhitunganHari {
-     public String[] getNamaBulan() {
+
+    public String[] getNamaBulan() {
         String[] bulan = new String[12];
         for (int i = 0; i < 12; i++) {
             bulan[i] = LocalDate.of(2000, i + 1, 1)
@@ -41,5 +42,4 @@ public class LogikaPerhitunganHari {
         long selisih = ChronoUnit.DAYS.between(ld1, ld2);
         return "Selisih Hari: " + Math.abs(selisih) + " hari";
     }
-    
 }
